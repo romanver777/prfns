@@ -1,0 +1,49 @@
+.ag-theme-quartz {
+  --ag-foreground-color: #000;
+  --ag-header-foreground-color: #000;
+  --ag-header-background-color: #fff;
+  --ag-odd-row-background-color: #fbfbfb;
+  --ag-row-background-color: #eef2f5;
+  --ag-header-column-resize-handle-color: none;
+  --ag-border-color: #fff;
+  --ag-header-height: 70px;
+  --ag-font-size: 14px;
+}
+.ag-row {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.ag-row-even {
+  background: #eef2f5;
+}
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar {
+  height: 12px;
+}
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar,
+.ag-floating-bottom::-webkit-scrollbar {
+  width: 10px;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-track,
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar-track {
+  background: #eef2f5;
+  border-radius: 10px;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb,
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar-thumb {
+  background: #277eff;
+  border-radius: 10px;
+}
+.ag-floating-bottom {
+  width: calc(100% - 10px);
+}
+.ag-cell {
+  border: 2px solid white;
+  border-width: 1px 2px;
+}
+
+.ag-row-pinned {
+  color: #277eff;
+  font-weight: bold;
+}
