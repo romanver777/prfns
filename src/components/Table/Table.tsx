@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { AgGridReact } from "ag-grid-react";
 import "ag-grid-community/styles/ag-grid.css";
@@ -126,6 +127,7 @@ const Table = ({ data, onSetData }: TProps) => {
           type: "fitGridWidth",
           defaultMinWidth: 200,
         }}
+        //@ts-ignore
         onCellValueChanged={onCellValueChanged}
       />
     </Box>
