@@ -70,10 +70,8 @@ const ResiduesPage = () => {
       const fileHandle = await window.showSaveFilePicker(options);
       const writableStream = await fileHandle.createWritable();
 
-      await writableStream.write(JSON.stringify(tableData));
+      await writableStream.write(JSON.stringify(getFilteredTableData()));
       await writableStream.close();
-
-      setOriginalData(JSON.parse(JSON.stringify(tableData)));
     } catch (e) {
       console.log("Cancelled, no file selected", e);
     }
@@ -153,13 +151,15 @@ const ResiduesPage = () => {
       <Header />
       <Box component={"main"} sx={{ paddingTop: "48px" }}>
         <Stack gap={"30px"}>
-          {tableData && (
-            <Title
-              title={`Остатки сформированы на ${getDate()}`}
-              actionTitle="Инструкции"
-              actionIcon={<LibraryBooksIcon />}
-            />
-          )}
+          <Title
+            title={
+              tableData
+                ? `Остатки сформированы на ${getDate()}`
+                : `Остатки не сформированы`
+            }
+            actionTitle="Инструкции"
+            actionIcon={<LibraryBooksIcon />}
+          />
           <Filter
             disabled={!tableData}
             onSetFilter={handleSetFilters}

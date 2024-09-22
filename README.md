@@ -1,5 +1,5 @@
 <h3>Таблица остатков</h3>
-<p>React, Typescript, Material UI</p>
+<p>React, Typescript, Material UI, AG-Grid-React</p>
 
 - по нажатию кнопки «загрузить данные из csv» заполняется таблица из файла json в корне проекта</br>
 - по нажатию «экспорт» сохраняются данные в формате json на диске</br>
