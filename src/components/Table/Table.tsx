@@ -110,7 +110,7 @@ const Table = ({ data, onSetData }: TProps) => {
     <Box
       className="ag-theme-quartz"
       sx={{
-        height: "300px",
+        height: "365px",
         width: "100%",
         padding: "10px 15px 30px",
         background: "#fff",

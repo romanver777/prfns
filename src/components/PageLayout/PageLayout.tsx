@@ -11,7 +11,7 @@ const PageLayout = ({ children }: TProps) => {
   return (
     <Stack
       direction={"row"}
-      gap="48px"
+      gap="32px"
       sx={{
         padding: "16px",
         backgroundColor: "var(--light-color-gray)",
@@ -20,7 +20,7 @@ const PageLayout = ({ children }: TProps) => {
     >
       <Stack
         gap={"5px"}
-        sx={{ width: "100%", minWidth: "320px", maxWidth: "380px" }}
+        sx={{ width: "350px" }}
       >
         <MainMenu />
         <SupportMenu />
